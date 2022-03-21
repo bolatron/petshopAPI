@@ -22,7 +22,7 @@ Resolução desenvolvida para o desafio enviado pela ZarpSystem.
   Exemplos:
 
   Para criação de um novo Tutor:
-  <code> ccurl -X POST 'localhost:8000/api/tutors/' --header 'Content-Type: application/json' --data-raw '{"first_name":"Teste","last_name":"Teste","email":"email@email.com","password":"123","phone":"9999-8888","status":"Acti"}' </code>
+  <code> curl -X POST 'localhost:8000/api/tutors/' --header 'Content-Type: application/json' --data-raw '{"first_name":"Teste","last_name":"Teste","email":"email@email.com","password":"123","phone":"9999-8888","status":"Acti"}' </code>
   
   Para criação de um novo Animal:
   <code> curl -X POST "localhost:8000/api/animals/" -H "Content-Type: application/json" --data-raw '{"name" : "Tobias", "birth_date": "1999-02-02", "type": "DOG", "breed": "Pastore", "status": "ACTI"}' </code>
