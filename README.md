@@ -32,12 +32,18 @@ Resolução desenvolvida para o desafio enviado pela ZarpSystem.
  
   Para listar um animal pelo id (mesma lógica para Tutor):
   <code> curl -X GET "localhost:8000/api/animals/<id:int>/" </code>
+ 
+  Para filtrar um animal pelo status (mesma lógica para Tutor):
+  <code> curl -X GET "localhost:8000/api/animals/?status=ACTI" </code>
    
   Para atualizar algum animal (mesma lógica para Tutor):
   <code> curl -X PATCH 'localhost:8000/api/animals/<id:int>/' --header 'Content-Type: application/json' --data-raw '{"status":"PEND"}' </code>
    
   Para deletar um animal (mesma lógica para Tutor):
   <code> curl -X DELETE 'localhost:8000/api/animals/<id:int>/' </code>
+   
+  Para venda de um animal:
+  <code> curl -X POST 'localhost:8000/api/animals/<int:id>/sell/' --header 'Content-Type: application/json' --data-raw '{"tutor": id}' </code>
    
  #### 3.1 Exclusão Lógica
    
