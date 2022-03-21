@@ -37,7 +37,7 @@ Resolução desenvolvida para o desafio enviado pela ZarpSystem.
   <code> curl -X PATCH 'localhost:8000/api/animals/<id:int>/' --header 'Content-Type: application/json' --data-raw '{"status":"PEND"}' </code>
    
   Para deletar um animal (mesma lógica para Tutor):
-  <code> curl -X DELETE 'localhost:8000/api/animals/<id:int>/' </code>
+  <code> curl -X DELETE 'localhost:8000/api/animals//<id:int/>/' </code>
    
  #### 3.1 Exclusão Lógica
    
