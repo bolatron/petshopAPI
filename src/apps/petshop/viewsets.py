@@ -35,8 +35,6 @@ class AnimalViewSet(viewsets.ModelViewSet):
     filterset_class = AnimalFilter
     filter_backends = [DjangoFilterBackend]
 
-    # POST localhost:8000/animals/1/sell/
-    # {"tutor": 2}
     @action(methods=["POST"], detail=True)
     def sell(self, request, pk, *args, **kwargs):
         animal_sale = AnimalSaleSerializer(data=request.data)
