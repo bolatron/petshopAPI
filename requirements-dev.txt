@@ -1,0 +1,11 @@
+-r requirements.txt
+
+debugpy
+
+# Testing
+pytest
+pytest-cov
+pytest-deadfixtures
+pytest-django
+pytest-factoryboy
+pytest-randomly

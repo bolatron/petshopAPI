@@ -1,0 +1,12 @@
+# Django
+Django>=4.0
+dj-database-url
+djangorestframework
+drf-writable-nested
+django-cors-headers
+django-filter
+
+psycopg2-binary
+prettyconf
+
+django-encrypted-model-fields
