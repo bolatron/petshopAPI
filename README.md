@@ -28,16 +28,16 @@ Resolução desenvolvida para o desafio enviado pela ZarpSystem.
   <code> curl -X POST "localhost:8000/api/animals/" -H "Content-Type: application/json" --data-raw '{"name" : "Tobias", "birth_date": "1999-02-02", "type": "DOG", "breed": "Pastore", "status": "ACTI"}' </code>
   
   Para listar todos os Animais (mesma lógica para Tutor):
-  <code> curl -X GET "localhost:8000/api/animals/"
+  <code> curl -X GET "localhost:8000/api/animals/" </code>
  
   Para listar um animal pelo id (mesma lógica para Tutor):
-  <code> curl -X GET "localhost:8000/api/animals/<id:int>/"
+  <code> curl -X GET "localhost:8000/api/animals/<id:int>/" </code>
    
   Para atualizar algum animal (mesma lógica para Tutor):
   <code> curl -X PATCH 'localhost:8000/api/animals/<id:int>/' --header 'Content-Type: application/json' --data-raw '{"status":"PEND"}' </code>
    
   Para deletar um animal (mesma lógica para Tutor):
-  <code> curl -X DELETE 'localhost:8000/api/animals/<id:int>/'
+  <code> curl -X DELETE 'localhost:8000/api/animals/<id:int>/' </code>
    
  #### 3.1 Exclusão Lógica
    
